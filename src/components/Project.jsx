@@ -1,15 +1,19 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg"
-import installNode from "../assets/portfolio/installNode.jpg"
+import manageEngine from "../assets/portfolio/manageEngine.jpg"
+import Boat from "../assets/portfolio/Boat.png"
 
 const Project = () => {
     const projects=[
         {
             id:1,
-            src:arrayDestruct,
+            src:manageEngine,
+            code:"https://github.com/vishal6566/ManageEngine",
+            demo:"https://effulgent-cassata-80da43.netlify.app/"
         }, {
             id:2,
-            src:installNode,
+            src:Boat,
+            code:"https://github.com/vishal6566/boat-clone",
+            demo:"https://regal-axolotl-a1cd50.netlify.app/",
         }
     ]
   return (
@@ -21,13 +25,13 @@ const Project = () => {
                 <p className='py-6'>Check out some my work right here.</p>
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-            {projects.map(({id,src})=>(
+            {projects.map(({id,src,code,demo})=>(
    
     <div  key={id}  className='shadow-md shadow-gray-600 rounded-lg'>
         <img src={src} alt="" className='rounded-md hover:scale-105 duration-200' />
         <div className='flex items-center justify-center'>
-            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' ><a href="https://effulgent-cassata-80da43.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a></button>
-            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' ><a href={demo} target="_blank" rel="noopener noreferrer">Demo</a></button>
+            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={code} target="_blank" rel="noopener noreferrer">Code</a></button>
         </div>
     </div>
 
