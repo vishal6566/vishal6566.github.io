@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.d80d5a77.css",
-    "main.js": "/static/js/main.7d1b3647.js",
+    "main.js": "/static/js/main.b447de6a.js",
     "static/media/Boat.png": "/static/media/Boat.d0575d096ae903aec5fb.png",
+    "static/media/Techhub.png": "/static/media/Techhub.901e2a741734dbade734.png",
     "static/media/manageEngine.jpg": "/static/media/manageEngine.bcf7017a616b71ad0db3.jpg",
     "static/media/heroImage.png": "/static/media/heroImage.b5ea6a6d3813e0468fe4.png",
     "static/media/weather.png": "/static/media/weather.3f0f0f1742f3042cb1bb.png",
@@ -14,10 +15,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.d80d5a77.css.map": "/static/css/main.d80d5a77.css.map",
-    "main.7d1b3647.js.map": "/static/js/main.7d1b3647.js.map"
+    "main.b447de6a.js.map": "/static/js/main.b447de6a.js.map"
   },
   "entrypoints": [
     "static/css/main.d80d5a77.css",
-    "static/js/main.7d1b3647.js"
+    "static/js/main.b447de6a.js"
   ]
 }
