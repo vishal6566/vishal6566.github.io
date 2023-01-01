@@ -6,8 +6,8 @@ import {Link} from "react-scroll"
 const Home = () => {
   const download=true;
   return (
-    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 '>
-      <div className='sm:max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row'>
+    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
+      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className='flex flex-col justify-center h-full'>
           <h2 className='text-4xl sm:text-5xl mt-8 font-bold text-white'>
             I'm a Full Stack Web Developer
