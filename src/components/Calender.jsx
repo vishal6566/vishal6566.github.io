@@ -1,33 +1,33 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
+
 const Calender = () => {
-  const selectLastHalfYear = (contributions) => {
+  const selectLastYearContributions = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 10;
+    const monthsInYear = 12;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
+      const yearDiff = currentYear - date.getFullYear();
+      const monthDiff = currentMonth - date.getMonth();
+      const totalMonths = yearDiff * monthsInYear + monthDiff;
 
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
+      return totalMonths <= monthsInYear && totalMonths >= 0;
     });
   };
+
   return (
     <div>
       <GitHubCalendar
         style={{ margin: "auto" }}
         username="vishal6566"
-        transformData={selectLastHalfYear}
+        transformData={selectLastYearContributions}
         blockSize={10}
         fontSize={10}
       >
-         <ReactTooltip delayShow={20} html /> 
+        <ReactTooltip delayShow={20} html />
       </GitHubCalendar>
     </div>
   );
